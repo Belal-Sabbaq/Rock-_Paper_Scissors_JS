@@ -40,7 +40,7 @@ let playRound = (humanChoice,computerChoice)=>{
 let humanScore = 0;
 let computerScore = 0;
 let round = 0;
-for(let i = 0; !(humanScore == 2 || computerScore == 2); i++){
+for(let i = 0; !(humanScore == 3 || computerScore == 3); i++){
   let computerChoice = getComputerChoice();
   let humanChoice = getHumanChoice();
   let roundResult = playRound(humanChoice, computerChoice);
