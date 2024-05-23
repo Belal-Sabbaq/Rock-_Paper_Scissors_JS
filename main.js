@@ -170,4 +170,4 @@ function reset(){
     humanSection.appendChild(options);
   }
 }
-resetbtn.addEventListener("click",reset())
+resetbtn.addEventListener("click",reset)
