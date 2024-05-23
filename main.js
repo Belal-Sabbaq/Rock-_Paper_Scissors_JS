@@ -53,12 +53,7 @@ let getComputerChoice = ()=> {
 };
 
 
-let playRound = (humanChoice,computerChoice)=>{
-  if(humanScore == 3 || compScore == 3){
-    alert(humanScore > compScore ? `You win by ${humanScore}`: `You lose by ${compScore}`);
-    reset();
-  }
-  
+let playRound = (humanChoice,computerChoice)=>{  
   if (humanChoice == computerChoice){
     result = 'draw';
     resultContainer.classList.add('draw');
@@ -140,6 +135,10 @@ nextButton.addEventListener("click",()=>{
       break;
     default:
       break;
+  }
+  if(humanScore == 3 || compScore == 3){
+    alert(humanScore > compScore ? `You win by ${humanScore}`: `You lose by ${compScore}`);
+    reset();
   }
 });
 function reset(){
