@@ -4,9 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="nav">
+    <div class="container">
+      <img src="img/logo.svg" alt="Rock Paper Scissors Game">
+      <div class="Score">
+        <h2>Your Score:  <span id="myScore">0</span></h2>
+        <h2>Computer Score: <span id="compScore">0</span></h2>
+        <h2>Round: <span id="RoundCount">0</span> </h2>
+      </div>
+    </div>
+  </div>
+  <div class="play">
+    <div class="human-play">
+      <h2 id="Pick">Pick</h2>
+      <ul id="ChoiceMenu">
+        <li class="choice" id="rock">
+          <h2>Rock</h2>
+          <img src="img/icon-rock.svg" alt="Rock">
+        </li>
+        <li class="choice" id="paper">
+          <h2>Paper</h2>
+          <img src="img/icon-paper.svg" alt="Paper">
+        </li>
+        <li class="choice" id="scissors">
+          <h2>Scissors</h2>
+          <img src="img/icon-scissors.svg" alt="Scissors">
+        </li>
+      </ul>
+    </div>
+    <div class="comp-play">
+      <h2>Computer Chose</h2>
+      <div class="choice-indp" id="compOptionContainer">
+      </div>
+      <button id="reset">RESET</button>
+    </div>
+  </div>
+  <div class="Next visible ">
+    <h1 id="roundState">Loading</h1>
+    <h3><span id="choice1Span">Rock</span> <span id="choice2Span">scissors</span></h3>
+    <button id="next">Play!</button>
+  </div>
 </body>
-</html>
+</html
